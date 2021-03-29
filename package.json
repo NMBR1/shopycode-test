@@ -1,5 +1,9 @@
 {
   "name": "shopycode-test",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "version": "1.0.0",
   "description": "testiranje",
   "main": "index.js",
