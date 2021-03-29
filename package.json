@@ -1,14 +1,16 @@
 {
   "name": "shopycode-test",
-  "engines": {
-    "node": "=12.3.0"
-  },
   "version": "1.0.0",
   "description": "app za isnta testing",
+  "engines": {
+    "node": "=12.x",
+    "npm": "6.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
