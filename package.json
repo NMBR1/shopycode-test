@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/NMBR1/shopycode-test#readme",
   "dependencies": {
-    "heroku": "^7.51.0"
+    "@heroku/buildpack-registry": "^1.0.1",
+    "async-file": "^2.0.2",
+    "cli-ux": "^4.9.3",
+    "got": "^8.3.2",
+    "heroku": "^7.51.0",
+    "phoenix": "^1.5.8"
   }
 }
