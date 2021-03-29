@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/NMBR1/shopycode-test/issues"
   },
-  "homepage": "https://github.com/NMBR1/shopycode-test#readme"
+  "homepage": "https://github.com/NMBR1/shopycode-test#readme",
+  "dependencies": {
+    "heroku": "^7.51.0"
+  }
 }
