@@ -1,24 +1,16 @@
 {
   "name": "shopycode-test",
   "version": "1.0.0",
-  "description": "app za isnta testing",
-  "engines": {
-    "node": "=12.x",
-    "npm": "6.x"
-  },
-  "main": "index.js",
+  "description": "node api hosted on heroku",
+  "main": "ìndex.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NMBR1/shopycode-test.git"
   },
-  "keywords": [
-    "insta",
-    "app",
-    "api"
-  ],
   "author": "MstefanR",
   "license": "ISC",
   "bugs": {
@@ -26,11 +18,9 @@
   },
   "homepage": "https://github.com/NMBR1/shopycode-test#readme",
   "dependencies": {
-    "@heroku/buildpack-registry": "^1.0.1",
-    "async-file": "^2.0.2",
-    "cli-ux": "^4.9.3",
-    "got": "^8.3.2",
-    "heroku": "^7.51.0",
-    "phoenix": "^1.5.8"
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.16.2"
   }
 }
