@@ -1,45 +1,47 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const { check, validationResult } = require('express-validator')
+console.log("Shopycode instagram app");
 
-const app = express()
-const port = process.env.PORT || 5000
+// const express = require('express')
+// const bodyParser = require('body-parser')
+// const { check, validationResult } = require('express-validator')
 
-// Set Templating Enginge
-app.set('view engine', 'ejs')
+// const app = express()
+// const port = process.env.PORT || 5000
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false })
+// // Set Templating Enginge
+// app.set('view engine', 'ejs')
 
-// Navigation
-app.get('', (req, res)=> {
-    res.render('index')
-})
+// const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.get('/register', (req, res)=> {
-    res.render('register')
-})
+// // Navigation
+// app.get('', (req, res)=> {
+//     res.render('index')
+// })
 
-app.post('/register', urlencodedParser, [
-    check('username', 'This username must me 3+ characters long')
-        .exists()
-        .isLength({ min: 3 }),
-    check('email', 'Email is not valid')
-        .isEmail()
-        .normalizeEmail()
+// app.get('/register', (req, res)=> {
+//     res.render('register')
+// })
 
-], (req, res)=> {
+// app.post('/register', urlencodedParser, [
+//     check('username', 'This username must me 3+ characters long')
+//         .exists()
+//         .isLength({ min: 3 }),
+//     check('email', 'Email is not valid')
+//         .isEmail()
+//         .normalizeEmail()
 
-    const errors = validationResult(req)
-    if(!errors.isEmpty()) {
-        // return res.status(422).jsonp(errors.array())
-        const alert = errors.array()
-        res.render('register', {
-            alert
-        })
-    }
+// ], (req, res)=> {
+
+//     const errors = validationResult(req)
+//     if(!errors.isEmpty()) {
+//         // return res.status(422).jsonp(errors.array())
+//         const alert = errors.array()
+//         res.render('register', {
+//             alert
+//         })
+//     }
 
 
-})
+// })
 
 
-app.listen(port, () => console.info(`App listening on port: ${port}`))
+// app.listen(port, () => console.info(`App listening on port: ${port}`))
