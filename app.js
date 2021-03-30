@@ -45,7 +45,7 @@ app.post('/register', urlencodedParser, [
 app.listen(port, () => console.info(`App listening on port: ${port}`))
 
 const Instagram = require('instagram-web-api');
-const { username, password } = proces.env;
+const { username, password } = process.env;
 
 const client = new Instagram({ username, password});
 
