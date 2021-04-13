@@ -1,6 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const { check, validationResult } = require('express-validator')
+const axios = require('axios');
+const fileSystem = require('fs');
+
 
 const app = express()
 const port = process.env.PORT || 5000
@@ -8,9 +11,15 @@ const port = process.env.PORT || 5000
 const clientID = '446975523244761';
 const instagramAppSecret = 'a2931c610cc0b8bc65fcfcc97b1189ad';
 const redirecUrl = 'https://shopycode-test.herokuapp.com/';
+const code = 'AQAx8re4KPQEOjXjFglhtbgvqbAzc08P8RFEuIoq2UbOOemcNEhZcWf7LF6VrXpi6ErvRBKLKotFAUzKO-KtpjqRZP-48LyxtKTk8sXZf_FDqINgrJFsEMaYSbSfTCYide39PrPc_e_XcQAXWJsJvBDNH7xK84y3zBsumLzvEiofUZezLmNTShM-v1KhVJX1tPFQNPbpuaIDGfuHUZk18TOG05kR9IlScONX5bpKHYcJyg#_';
+
+
+
 
 // Set Templating Enginge
 app.set('view engine', 'ejs')
+
+app.use('skripta.js', express.static(path.join()))
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
