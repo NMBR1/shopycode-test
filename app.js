@@ -5,6 +5,10 @@ const { check, validationResult } = require('express-validator')
 const app = express()
 const port = process.env.PORT || 5000
 
+const clientID = '446975523244761';
+const instagramAppSecret = 'a2931c610cc0b8bc65fcfcc97b1189ad';
+const redirecUrl = 'https://shopycode-test.herokuapp.com/';
+
 // Set Templating Enginge
 app.set('view engine', 'ejs')
 
@@ -50,9 +54,11 @@ const { username, password } = process.env;
 const client = new Instagram({ username: 'shopycode_agency' , password: 'Fudbaleri89!!'});
 
 client
-  .login()
-  .then(() => {
-    client
-      .getProfile()
-      .then(console.log)
-  })
+    .login()
+        .then(() => {
+            client
+              .getProfile()
+                  .then(() => {
+                      console.log(client)
+             })
+        });
