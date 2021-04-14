@@ -15,11 +15,11 @@ const code =  'AQAs9AA58wrzT4GqQojV4eDF6hGhpyPPGs-gFxxaMEOV2ylWb7AaxkyEzvbsaJsaF
 const longLivedToken = 'IGQVJYMVRGWGRFSklGMXhaOF9KTks3WUZANbDBTM2JFVHl1UjNucXBWbzVMNUNhRlg1ZAU16dlVvMUNmOTBkdVJ2amZA5OW1iZAjBJMGVKMjlsZAWR2aVRlNTZAPWEotcjczRjZAGYURO';
 const userID = '17841447048230459';
 
-async function gettingData() {
-    let res = await axios.get('https://graph.instagram.com/me?fields=id,username&access_token=IGQVJYMVRGWGRFSklGMXhaOF9KTks3WUZANbDBTM2JFVHl1UjNucXBWbzVMNUNhRlg1ZAU16dlVvMUNmOTBkdVJ2amZA5OW1iZAjBJMGVKMjlsZAWR2aVRlNTZAPWEotcjczRjZAGYUROdFln');
-    console.log(res);
-    console.log("----------------------------------------------------------------------------------------------------------------------------------");
-}
+// async function gettingData() {
+//     let res = await axios.get('https://graph.instagram.com/me?fields=id,username&access_token=IGQVJYMVRGWGRFSklGMXhaOF9KTks3WUZANbDBTM2JFVHl1UjNucXBWbzVMNUNhRlg1ZAU16dlVvMUNmOTBkdVJ2amZA5OW1iZAjBJMGVKMjlsZAWR2aVRlNTZAPWEotcjczRjZAGYUROdFln');
+//     console.log(res);
+//     console.log("----------------------------------------------------------------------------------------------------------------------------------");
+// }
 
 
 // Set Templating Enginge
