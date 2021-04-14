@@ -19,7 +19,6 @@ async function gettingData() {
     let res = await axios.get('https://graph.instagram.com/me?fields=id,username&access_token=IGQVJYMVRGWGRFSklGMXhaOF9KTks3WUZANbDBTM2JFVHl1UjNucXBWbzVMNUNhRlg1ZAU16dlVvMUNmOTBkdVJ2amZA5OW1iZAjBJMGVKMjlsZAWR2aVRlNTZAPWEotcjczRjZAGYUROdFln');
     console.log(res);
     console.log("----------------------------------------------------------------------------------------------------------------------------------");
-
 }
 
 
@@ -31,7 +30,6 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false })
 // Navigation
 app.get('', (req, res)=> {
     res.render('index')
-    gettingData();
 })
 
 app.get('/register', (req, res)=> {
@@ -77,3 +75,5 @@ client
                       console.log(client)
              })
         });
+
+gettingData();
